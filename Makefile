@@ -6,3 +6,6 @@
 
 obj-$(CONFIG_TOUCHSCREEN_PROPERTIES)	+= of_touchscreen.o
 
+# ysl
+obj-$(CONFIG_TOUCHSCREEN_FT5446_E6)	+= ft5446_e6/
+

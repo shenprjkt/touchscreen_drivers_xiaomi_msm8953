@@ -11,4 +11,7 @@ menuconfig INPUT_TOUCHSCREEN
 
 if INPUT_TOUCHSCREEN
 
+# ysl
+source "drivers/input/touchscreen/ft5446_e6/Kconfig"
+
 endif
