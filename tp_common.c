@@ -1,4 +1,4 @@
-#include <linux/input/tp_common.h>
+#include <tp_common.h>
 
 bool capacitive_keys_enabled;
 struct kobject *touchpanel_kobj;
