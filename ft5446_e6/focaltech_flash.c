@@ -77,6 +77,14 @@ struct workqueue_struct *touch_wq;
 struct work_struct fw_update_work;
 u8 *g_fw_file;
 int g_fw_len;
+
+static struct ft_chip_t ctype[] = {
+	{0x02, 0x54, 0x22, 0x54, 0x22, 0x00, 0x00, 0x54, 0x2C}
+	{0x88, 0x56, 0x52, 0x00, 0x00, 0x00, 0x00, 0x56, 0xB2},
+	{0x81, 0x54, 0x52, 0x54, 0x52, 0x00, 0x00, 0x54, 0x5C},
+	{0x1C, 0x87, 0x26, 0x87, 0x20, 0x87, 0xA0, 0x00, 0x00},
+};
+
 /*****************************************************************************
 * Static function prototypes
 *****************************************************************************/
@@ -144,7 +152,6 @@ int fts_ctpm_i2c_hid2std(struct i2c_client *client)
 ***********************************************************************/
 void fts_get_chip_types(void)
 {
-	struct ft_chip_t ctype[] = FTS_CHIP_TYPE_MAPPING;
 	int ic_type = 0;
 
 	if (sizeof(ctype) != sizeof(struct ft_chip_t)) /* only one array */

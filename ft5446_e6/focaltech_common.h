@@ -48,8 +48,6 @@
 #define IC_SERIALS              (FTS_CHIP_TYPE & FLAGBITS(0, FLAG_ICSERIALS_LEN-1))
 #define FTS_CHIP_IDC            ((FTS_CHIP_TYPE & FLAGBIT(FLAG_IDC_BIT)) == FLAGBIT(FLAG_IDC_BIT))
 
-#define FTS_CHIP_TYPE_MAPPING {{0x02, 0x54, 0x22, 0x54, 0x22, 0x00, 0x00, 0x54, 0x2C}}
-
 #define I2C_BUFFER_LENGTH_MAXINUM           256
 #define FILE_NAME_LENGTH                    128
 #define ENABLE                              1
