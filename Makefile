@@ -6,6 +6,9 @@
 
 obj-$(CONFIG_TOUCHSCREEN_PROPERTIES)	+= of_touchscreen.o
 
+# common
+obj-$(CONFIG_TOUCHSCREEN_COMMON) += tp_common.o
+
 # ysl
 obj-$(CONFIG_TOUCHSCREEN_FT5446_E6)	+= ft5446_e6/
 obj-$(CONFIG_TOUCHSCREEN_GT917D_E6) += gt917d_e6/
