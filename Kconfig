@@ -13,5 +13,6 @@ if INPUT_TOUCHSCREEN
 
 # ysl
 source "drivers/input/touchscreen/ft5446_e6/Kconfig"
+source "drivers/input/touchscreen/gt917d_e6/Kconfig"
 
 endif
